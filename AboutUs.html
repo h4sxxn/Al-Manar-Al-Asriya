@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AL MANAR AL ASRIYA - About Us</title>
+<style>
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #e1e1e1;
+    color: #000;
+    text-align: center;
+}
+
+/* Header / Logo */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* ensures logo & text are centered horizontally */
+    justify-content: center;
+    width: 100%;
+    margin: 20px 0;
+}
+header img {
+    width: 600px;
+    max-width: 90%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Navigation */
+nav {
+    text-align: center;
+    margin: 20px 0;
+}
+nav a {
+    background-color: #8c734a;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    display: inline-block;
+}
+
+/* Main Content */
+h1, h2 { margin: 20px 0 10px; }
+p { margin: 10px 20px; line-height: 1.6; }
+ul { list-style-type: none; padding: 0; margin: 10px 0; text-align: left; max-width: 600px; margin-left: auto; margin-right: auto; }
+ul li { margin: 5px 0; }
+
+/* Footer */
+.footer {
+    background-color: #8c734a;
+    color: #fff;
+    padding: 40px 20px;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.footer-column { width: 30%; text-align: center; }
+.footer h3 { font-size: 18px; margin-bottom: 20px; }
+.footer a { color: #fff; text-decoration: none; font-size: 14px; }
+.footer a:hover { text-decoration: underline; }
+.social-icons { margin-top: 20px; text-align: center; }
+.social-icons img { width: 30px; height: 30px; margin: 0 10px; }
+.footer-bottom { text-align: center; margin-top: 20px; font-size: 14px; }
+
+/* Responsive */
+@media (max-width: 992px) {
+    header img { width: 400px; }
+    .footer-column { width: 45%; }
+}
+@media (max-width: 600px) {
+    header img { width: 200px; }
+    h1 { font-size: 1.5rem; }
+    h2 { font-size: 1.2rem; }
+    p, ul li { font-size: 1rem; }
+    nav a { padding: 8px 15px; font-size: 14px; }
+    .footer-column { width: 100%; }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <img src="Images/1.png" alt="Company Logo">
+    <i>Welcome to AL MANAR AL ASRIYA</i><br><br>
+    <b>Where Ambition Meets Excellence in Construction</b>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="Facilites.html">Facilities</a>
+    <a href="AboutUs.html">About Us</a>
+    <a href="Contact.html">Contact</a>
+</nav>
+
+<h1>About Us</h1>
+<p>Welcome to AL MANAR AL ASRIYA, a construction company driven by vision, precision, and innovation. Since our inception, we have been committed to creating landmark projects that combine strength, durability, and aesthetic excellence.</p>
+
+<h2>Our Vision</h2>
+<p>To be a leading construction company recognized for innovation, quality, and sustainable building practices that shape modern skylines and improve communities.</p>
+
+<h2>Our Mission & Values</h2>
+<p>Our mission is to deliver superior construction solutions through skilled craftsmanship, advanced technology, and sustainable practices. Our core values guide every project:</p>
+<ul>
+<li><b>Excellence:</b> Delivering high-quality results with precision and care.</li>
+<li><b>Innovation:</b> Embracing modern technology for smarter construction.</li>
+<li><b>Integrity:</b> Conducting business with honesty and transparency.</li>
+<li><b>Sustainability:</b> Reducing environmental impact through eco-friendly practices.</li>
+</ul>
+
+<h2>Our Projects</h2>
+<p>From residential complexes to commercial landmarks, each project reflects our dedication to safety, durability, and client satisfaction. We work closely with clients to ensure their vision becomes reality.</p>
+
+<h2>Join Our Journey</h2>
+<p>At AL MANAR AL ASRIYA, we are more than builders—we are visionaries shaping the future of construction. Trust us to bring innovation, strength, and beauty to every project we undertake.</p>
+
+<!-- Footer -->
+<div class="footer">
+    <div class="footer-content">
+        <div class="footer-column">
+            <h3>AL MANAR AL ASRIYA</h3>
+            <h3>Since 2002</h3>
+        </div>
+        <div class="footer-column">
+            <p><a href="AboutUs.html">Our Story</a> | <a href="#">The Lartisien Difference</a></p>
+            <p><a href="#">Groups & Events</a></p>
+        </div>
+        <div class="footer-column">
+            <p><a href="Contact.html">Contact Us</a> | <a href="Contact.html">Help</a></p>
+            <p><a href="#">Terms & Conditions</a> | <a href="#">Privacy Policy</a></p>
+        </div>
+    </div>
+    <div class="social-icons">
+        <a href="https://www.instagram.com"><img src="Images/insta.png"></a>
+        <a href="https://www.facebook.com"><img src="Images/face.png"></a>
+        <a href="https://www.twitter.com"><img src="Images/tw.png"></a>
+    </div>
+    <div class="footer-bottom">
+        <p>+965 99015863 | English | GBP</p>
+        <img src="Images/ms.png" width="50">
+        <img src="Images/vs.png" width="50">
+        <p>Our online services work under GDPR rules and regulations</p>
+        <img src="Images/gd.png" width="50">
+    </div>
+</div>
+
+</body>
+</html>

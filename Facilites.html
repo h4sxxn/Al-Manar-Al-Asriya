@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AL MANAR AL ASRIYA - Facilities</title>
+<style>
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #e1e1e1;
+    color: #000;
+    text-align: center;
+}
+
+/* Header */
+header img {
+    width: 600px;       /* original large size on laptop */
+    max-width: 90%;     /* scales down on smaller screens */
+    margin: 20px 0;
+}
+
+header i, header b, header h1 {
+    display: block;
+    margin: 5px 0;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+/* Navigation */
+nav {
+    margin: 20px 0;
+}
+
+nav a {
+    background-color: #8c734a;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0 5px;
+    display: inline-block;
+}
+
+/* Features Section */
+.features-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* centers last row */
+    gap: 20px;
+    padding: 20px;
+}
+
+.feature-card {
+    flex: 0 0 30%;       /* 3 cards per row on desktop */
+    max-width: 600px;    /* matches original large images */
+    background-color: #fff;
+    border-radius: 7px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 10px;
+}
+
+.feature-card img {
+    width: 100%;
+    height: auto; /* scales proportionally */
+}
+
+.feature-card p {
+    margin-top: 10px;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+/* Footer */
+footer {
+    background-color: #8c734a;
+    color: white;
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.footer-column {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
+
+/* Tablet responsiveness */
+@media (max-width: 992px) {
+    .feature-card {
+        flex: 0 0 45%;  /* 2 cards per row on tablets */
+        max-width: 400px; /* scale down */
+    }
+    header img {
+        width: 400px;
+    }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    .feature-card {
+        flex: 0 0 90%;  /* 1 card per row */
+        max-width: 90%;
+    }
+    header img {
+        width: 200px; /* scales down for phone */
+    }
+    header h1 {
+        font-size: 2rem;
+    }
+    nav a {
+        padding: 8px 15px;
+        font-size: 14px;
+        margin: 5px 0;
+    }
+    .footer-column {
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <img src="Images/1.png" alt="AL MANAR AL ASRIYA">
+    <i>Welcome to AL MANAR AL ASRIYA</i>
+    <b>Building Dreams with Strength and Precision</b>
+    <h1>High Quality Construction</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home page</a>
+    <a href="Facilites.html">Facilities</a>
+    <a href="AboutUs.html">About Us</a>
+    <a href="Contact.html">Contact</a>
+</nav>
+
+<p>You can book appointment with our team. <a href="booking.html">Here</a></p>
+
+<div class="features-container">
+    <div class="feature-card">
+        <img src="Images/image5.jpg" alt="Heavy Machinery">
+        <p>Experience our state-of-the-art machinery, designed to handle projects of any scale with accuracy and safety.</p>
+    </div>
+    <div class="feature-card">
+        <img src="Images/image6.jpg" alt="Workshops">
+        <p>Our workshops support carpentry, welding, and prefabrication, allowing us to deliver tailored construction solutions.</p>
+    </div>
+    <div class="feature-card">
+        <img src="Images/image 7.jpg" alt="On-Site Facilities">
+        <p>Our on-site facilities provide offices, storage, and accommodation to ensure smooth project execution.</p>
+    </div>
+    <div class="feature-card">
+        <img src="Images/image8.jpg" alt="Material Storage">
+        <p>Secure and organized storage yards keep construction materials safe and accessible at all times.</p>
+    </div>
+    <div class="feature-card">
+        <img src="Images/image9.jpg" alt="Safety & Quality">
+        <p>We follow strict safety standards and quality control measures to guarantee reliable results for every project.</p>
+    </div>
+    <div class="feature-card">
+        <img src="Images/image10.webp" alt="Training & Technology">
+        <p>Our team receives continuous training and uses advanced design software like AutoCAD and BIM for precise planning.</p>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-column">
+            <h3>AL MANAR AL ASRIYA</h3>
+            <h3>Since 2002</h3>
+        </div>
+        <div class="footer-column">
+            <p><a href="#">Our Story</a> | <a href="#">Our Vision</a></p>
+            <p><a href="#">Projects & Clients</a></p>
+        </div>
+        <div class="footer-column">
+            <p><a href="#">Contact Us</a> | <a href="#">Help</a></p>
+            <p><a href="#">Terms & Conditions</a> | <a href="#">Privacy Policy</a></p>
+        </div>
+    </div>
+    <div class="social-icons">
+        <a href="#"><img src="Images/insta.png" alt="Instagram"></a>
+        <a href="#"><img src="Images/face.png" alt="Facebook"></a>
+        <a href="#"><img src="Images/tw.png" alt="Twitter"></a>
+    </div>
+    <div>
+        <p>+965 99015863 | English | GBP</p>
+        <img src="Images/ms.png" alt="Logo" width="50">
+        <img src="Images/vs.png" alt="Logo" width="50">
+        <p>Our online services work under GDPR rules and regulations</p>
+        <img src="Images/gd.png" alt="GDPR" width="50">
+    </div>
+</footer>
+
+</body>
+</html>

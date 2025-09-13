@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AL MANAR AL ASRIYA - Home</title>
+<style>
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #e1e1e1;
+    color: #000;
+    text-align: center;
+}
+
+/* Header */
+header img {
+    width: 600px;
+    max-width: 90%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.hero-text {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Navigation */
+nav {
+    margin: 20px 0;
+}
+nav a {
+    background-color: #8c734a;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    display: inline-block;
+}
+
+/* Appointment section */
+.appointment {
+    padding: 40px 20px;
+}
+.appointment h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.appointment p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+.appointment .form-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.appointment .form-container input, .appointment .form-container select, .appointment .form-container button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+.appointment .form-container button {
+    background-color: #8c734a;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Slideshow images under appointment */
+.slideshow-container {
+    max-width: 1000px;
+    margin: 30px auto;
+    position: relative;
+}
+.mySlides {display: none;}
+.mySlides img {width: 100%; height: auto; border-radius: 8px;}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {right: 0; border-radius: 3px 0 0 3px;}
+.prev:hover, .next:hover {background-color: rgba(0,0,0,0.8);}
+.text {
+    color: #f2f2f2; 
+    font-size: 16px; 
+    padding: 8px 12px; 
+    position: absolute; 
+    bottom: 8px; 
+    width: 100%; 
+    text-align: center;
+}
+.dot {cursor:pointer;height:15px;width:15px;margin:0 2px;background-color:#bbb;border-radius:50%;display:inline-block;transition:background-color 0.6s ease;}
+.active, .dot:hover {background-color:#717171;}
+.fade {animation-name:fade; animation-duration:1.5s;}
+@keyframes fade {from {opacity: .4} to {opacity: 1}}
+
+/* Bottom features */
+.top-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 20px;
+    text-align: center;
+    gap: 20px;
+}
+.top-section div {
+    flex: 0 0 30%;
+    max-width: 400px;
+    background: #fff;
+    border-radius: 7px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.top-section h2 {font-size: 1.5rem; margin-bottom: 10px;}
+.top-section p {font-size: 1rem; color: #333;}
+
+/* Footer */
+.footer {
+    background-color: #8c734a;
+    color: #fff;
+    padding: 40px 20px;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.footer-column {
+    width: 30%;
+    text-align: center;
+}
+.footer h3 {font-size: 18px; margin-bottom: 20px;}
+.footer a {color: #fff; text-decoration: none; font-size: 14px;}
+.footer a:hover {text-decoration: underline;}
+.social-icons {margin-top: 20px; text-align: center;}
+.social-icons img {width: 30px; height: 30px; margin: 0 10px;}
+.footer-bottom {text-align: center; margin-top: 20px; font-size: 14px;}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .top-section div {flex: 0 0 45%;}
+    header img {width: 400px;}
+}
+@media (max-width: 600px) {
+    .top-section div {flex: 0 0 90%;}
+    header img {width: 200px;}
+    header h1 {font-size: 2rem;}
+    .appointment h2 {font-size: 1.5rem;}
+    .appointment .form-container input, .appointment .form-container select, .appointment .form-container button {font-size: 0.9rem; width: 100%;}
+    nav a {padding: 8px 15px; font-size: 14px;}
+    .footer-column {width: 100%;}
+}
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <img src="Images/1.png" alt="Company Logo">
+    <h1>AL MANAR AL ASRIYA</h1>
+    <p class="hero-text">Building Your Dreams Into Reality</p>
+</header>
+
+<!-- Navigation -->
+<nav>
+    <a href="index.html">Home</a>
+    <a href="Facilites.html">Facilities</a>
+    <a href="AboutUs.html">About Us</a>
+    <a href="Contact.html">Contact</a>
+</nav>
+
+<!-- Appointment / Quote -->
+<section class="appointment">
+    <h2>Book an Appointment / Request a Quote</h2>
+    <p>Fill out the form below to schedule a consultation or get a price estimate for your construction project.</p>
+    <div class="form-container">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="text" placeholder="Phone" required>
+        <select>
+            <option>Residential Project</option>
+            <option>Commercial Project</option>
+            <option>Renovation</option>
+            <option>Other</option>
+        </select>
+        <input type="text" placeholder="Project Budget">
+        <button type="submit">Submit</button>
+    </div>
+</section>
+
+<!-- Slideshow under appointment -->
+<div class="slideshow-container">
+    <div class="mySlides fade"><img src="Images/image2.jpg"><div class="text"></div></div>
+    <div class="mySlides fade"><img src="Images/image3.jpeg"><div class="text"></div></div>
+    <div class="mySlides fade"><img src="Images/image4.jpeg"><div class="text"></div></div>
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+</div>
+<div style="text-align:center; margin-top:10px;">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+let slideIndex=1;
+showSlides(slideIndex);
+function plusSlides(n){showSlides(slideIndex+=n);}
+function currentSlide(n){showSlides(slideIndex=n);}
+function showSlides(n){
+  let i; let slides=document.getElementsByClassName("mySlides");
+  let dots=document.getElementsByClassName("dot");
+  if(n>slides.length){slideIndex=1}
+  if(n<1){slideIndex=slides.length}
+  for(i=0;i<slides.length;i++){slides[i].style.display="none";}
+  for(i=0;i<dots.length;i++){dots[i].className=dots[i].className.replace(" active","");}
+  slides[slideIndex-1].style.display="block";
+  dots[slideIndex-1].className+=" active";
+}
+</script>
+
+<!-- Bottom features section -->
+<div class="top-section">
+    <div>
+        <h2>Heavy Machinery</h2>
+        <p>Our cranes, excavators, and mixers ensure precision and efficiency on every project.</p>
+    </div>
+    <div>
+        <h2>Material Storage</h2>
+        <p>Secure and organized storage yards for cement, steel, and other construction materials.</p>
+    </div>
+    <div>
+        <h2>Skilled Workforce</h2>
+        <p>Our team of engineers, architects, and skilled workers deliver high-quality construction solutions.</p>
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    <div class="footer-content">
+        <div class="footer-column">
+            <h3>AL MANAR AL ASRIYA</h3>
+            <h3>Since 2002</h3>
+        </div>
+        <div class="footer-column">
+            <p><a href="#">Our Story</a> | <a href="#">Our Vision</a></p>
+            <p><a href="#">Projects & Clients</a></p>
+        </div>
+        <div class="footer-column">
+            <p><a href="#">Contact Us</a> | <a href="#">Help</a></p>
+            <p><a href="#">Terms & Conditions</a> | <a href="#">Privacy Policy</a></p>
+        </div>
+    </div>
+    <div class="social-icons">
+        <a href="#"><img src="Images/insta.png"></a>
+        <a href="#"><img src="Images/face.png"></a>
+        <a href="#"><img src="Images/tw.png"></a>
+    </div>
+    <div class="footer-bottom">
+        <p>+965 99015863 | English | GBP</p>
+        <img src="Images/ms.png" width="50">      
+        <img src="Images/vs.png" width="50">   
+        <p>Our online services work under GDPR rules and regulations</p>
+        <img src="Images/gd.png" width="50">
+    </div>
+</div>
+</body>
+</html>
